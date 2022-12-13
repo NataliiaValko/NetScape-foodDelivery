@@ -1,0 +1,33 @@
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0px 0px;
+  padding: 0px 0px;
+}
+
+ul,
+ol {
+  margin: 0px 0px;
+  padding: 0px 0px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  margin: 0px;
+  padding-top: 72px;
+  font-family: Roboto, sans-serif;
+  background-color: var(--background-color-usual);
+}
+
+a,
+.nomaker-ul ul {
+  list-style: none;
+  text-decoration: none;
+}

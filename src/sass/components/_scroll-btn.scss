@@ -1,0 +1,44 @@
+.scroll-up {
+  position: fixed;
+  right: 10px;
+  bottom: 5px;
+  border-radius: 50%;
+  border: none;
+  width: 40px;
+  height: 40px;
+  z-index: 2;
+
+
+  @include tablet {
+    right: 30px;
+    bottom: 35px;
+  }
+
+  @include desktop {
+    right: 40px;
+    bottom: 40px;
+  }
+}
+
+.scroll-up__svg {
+  fill: #7EB101;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    fill: var(--brand-color-additional);
+    cursor: pointer;
+  }
+}
+
+.stt {
+  // visibility: hidden;
+  opacity: 0;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.stt__active {
+  // visibility: visible;
+  opacity: 0.9;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
